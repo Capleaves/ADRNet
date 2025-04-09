@@ -1,11 +1,11 @@
 import argparse
 import time
 import utils
-from GCIC_ours import *
+from ADRNet_model import *
 
 
 def _main(config, logger, running_cnt):
-    model = GCIC(config=config, logger=logger, running_cnt=running_cnt)
+    model = ADRNet(config=config, logger=logger, running_cnt=running_cnt)
 
     logger.info(
         "==========================================================================="
